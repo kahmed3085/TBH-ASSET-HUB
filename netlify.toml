@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
