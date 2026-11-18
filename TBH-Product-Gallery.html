@@ -14,7 +14,8 @@ h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(4
 .lede{max-width:600px;margin-top:20px;line-height:1.6;color:var(--muted)}
 .cta{display:inline-block;margin-top:28px;font-weight:700;font-size:14px;color:var(--cream);background:var(--brown);padding:14px 22px;text-decoration:none;transition:background .2s ease}
 .cta:hover{background:var(--ink)}
-nav.jump{position:sticky;top:0;z-index:5;background:rgba(249,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 6vw;display:flex;gap:8px 22px;overflow-x:auto;white-space:nowrap;font-size:13px}
+nav.jump{position:sticky;top:0;z-index:5;background:rgba(249,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 6vw;display:flex;gap:8px 22px;overflow-x:auto;white-space:nowrap;font-size:13px;scrollbar-width:none}
+nav.jump::-webkit-scrollbar{display:none}
 nav.jump a{text-decoration:none;color:var(--muted)}nav.jump a:hover{color:var(--brown);text-decoration:underline;text-underline-offset:4px}
 main{display:block}
 section{counter-increment:sec;padding:64px 6vw 0;scroll-margin-top:56px}
