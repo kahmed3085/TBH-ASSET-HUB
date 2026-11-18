@@ -1,0 +1,9 @@
+/* TBH Asset Hub — logo intro / outro curtain */
+#tbh-curtain{position:fixed;inset:0;z-index:100;background:#f9f8f5;display:flex;align-items:center;justify-content:center;
+  animation:tcFailsafe .4s ease 4s forwards}
+@keyframes tcFailsafe{to{opacity:0;visibility:hidden}}
+#tbh-curtain .tc-inner{display:flex;flex-direction:column;align-items:center;gap:20px;will-change:transform}
+#tbh-curtain .tc-logo{display:block;width:min(340px,62vw);height:auto;clip-path:inset(0% 100% 0% 0%)}
+#tbh-curtain .tc-line{width:min(340px,62vw);height:1px;background:#65421e;transform:scaleX(0);transform-origin:left center}
+#tbh-curtain .tc-tag{font:400 11px/1 "Nunito Sans",system-ui,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:#65421e;opacity:0}
+@media (prefers-reduced-motion:reduce){#tbh-curtain{display:none!important}}
